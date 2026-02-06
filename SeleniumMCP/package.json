@@ -1,0 +1,26 @@
+{
+  "name": "selenium-tests",
+  "version": "1.0.0",
+  "description": "Selenium WebDriver testing project with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require ts-node/register tests/**/*.test.ts",
+    "test:headed": "mocha --require ts-node/register tests/**/*.test.ts",
+    "test:debug": "mocha --require ts-node/register tests/**/*.test.ts --reporter spec",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["selenium", "testing", "e2e", "webdriver"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^22.12.0",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.25.0"
+  }
+}
